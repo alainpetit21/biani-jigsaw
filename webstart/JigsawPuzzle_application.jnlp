@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+" codebase="http://www.bianisoft.com/myFiles" href="JigsawPuzzle_application.jnlp" version="1.7">
+
+	<information>
+		<title>JigsawPuzzle</title>
+		<vendor>Alain Petit</vendor>
+		<homepage href="http://www.bianisoft.com/"/>
+		<description>Jigsaw puzzle</description>
+		<description kind="short">Jigsaw Puzzle</description>
+		<offline-allowed/>
+	</information>
+	<update check="background" policy="always"/>
+
+	<security>
+		<all-permissions/>
+	</security>
+
+	<resources>
+		<j2se href="http://java.sun.com/products/autodl/j2se" version="1.6+"/>
+		<property name="sun.java2d.noddraw" value="true"/>
+		<jar href="JigsawPuzzle.jar" main="true" version="1.7"/>
+		<jar href="JigsawPuzzle_res.jar" version="1.7"/>
+		<jar href="lib/Bianisoft2.jar" version="1.4"/>
+		<jar href="lib/jogg.jar" version="0.0.7"/>
+		<jar href="lib/jorbis.jar" version="0.0.15"/>
+		<property name="jnlp.versionEnabled" value="true"/>
+	</resources>
+
+	<resources>
+		<jar href="lib/jinput.jar"/>
+		<jar href="lib/lwjgl.jar"/>
+		<jar href="lib/lwjgl_util.jar"/>
+	</resources>
+
+	<resources os="Windows">
+		<nativelib href = "lib/windows/windows_natives.jar"/>
+	</resources>
+	<resources os="Linux">
+		<nativelib href = "lib/linux/linux_natives.jar"/>
+	</resources>
+	<resources os="Mac OS X">
+		<nativelib href = "lib/macosx/macosx_natives.jar"/>
+	</resources>
+
+
+	<application-desc
+         name="Jigsaw Puzzle"
+         main-class="com.bianisoft.games.jigsawpuzzle.AppJigsawPuzzle"
+         width="800"
+         height="600">
+	</application-desc>
+</jnlp>

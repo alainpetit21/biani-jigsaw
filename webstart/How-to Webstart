@@ -1,0 +1,32 @@
+Edit file ../src/com/bianisoft/games/jigsawpuzzle/AppJigsawPuzzle.java
+	-Change all to proper Version #.# 
+
+Edit file ../src/com/bianisoft/games/jigsawpuzzle/AppletJigsawPuzzle.java
+	-Change all to proper Version #.# 
+
+Edit file ../manifest.mf	
+	-Change all to proper Version #.# 
+
+Edit file ./JigsawPuzzle.jnlp
+	-Change all to proper Game Version #.# 
+	-Change all to proper Bianisoft lib Version #.# 
+
+Edit file ./JigsawPuzzle_application.jnlp
+	-Change all to proper Game Version #.# 
+	-Change all to proper Bianisoft lib Version #.# 
+
+Command line, ./
+	-./build-webstart.sh distclean
+	-./build-webstart.sh webstart
+
+Rename file 
+	-./lib/Bianisoft2.jar to Bianisoft2__V#.#.jar
+	-./JigsawPuzzle.jar to JigsawPuzzle__V#.#.jar
+	-./JigsawPuzzle_res.jar to JigsawPuzzle_res__V#.#.jar
+
+Upload to Website
+	-All Sublibs
+	-All Game jar versions
+	-Keep all version on website
+
+
